@@ -1,3 +1,6 @@
+/*
+ * 다른 프로세스 내에서 시스템 명령 실행.
+ */
 var childProcess = require('child_process');
 var options = {maxBuffer:100*1024, encoding:'utf8', timeout:5000};
 var child = childProcess.exec('ls /', options, function (error, stdout, stderr) {

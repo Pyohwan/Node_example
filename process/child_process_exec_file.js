@@ -1,3 +1,6 @@
+/*
+ * 다른 프로세스 내에서 실행 가능 파일을 실행.
+ */
 var childProcess = require('child_process');
 var options = {maxBuffer:100*1024, encoding:'utf8', timeout:5000};
 var child = childProcess.execFile('ping', ['-c', '3', 'google.com'], options, function (error, stdout, stderr) {

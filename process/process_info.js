@@ -1,3 +1,6 @@
+/*
+ * process 모듈을 사용해 프로세스와 시스템 정보에 접근.
+ */
 var util = require('util');
 console.log('Current directory: ' + process.cwd());
 console.log('Environment Settings: ' + JSON.stringify(process.env));
